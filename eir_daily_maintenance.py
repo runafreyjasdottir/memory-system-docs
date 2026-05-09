@@ -267,8 +267,7 @@ class EirMaintenance:
         try:
             from skofnung import ToolAffinity
             from skofnung.config import Config
-            config = Config(db_path=str(SKOFNUNG_DB))
-            affinity = ToolAffinity(config=config)
+            affinity = ToolAffinity(db_path=str(SKOFNUNG_DB))
             result = affinity.decay(days=1)
             phase["affinity"] = result
             affinity.close()
