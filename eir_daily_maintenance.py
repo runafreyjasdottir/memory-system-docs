@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/home/pi/.hermes/hermes-agent/venv/bin/python3
 """
 Eir Daily Maintenance Ritual
 ================================
@@ -31,7 +31,7 @@ import requests
 
 # ─── Configuration ──────────────────────────────────────────────────────────
 
-MIMIR_DB = Path.home() / ".hermes" / "memory" / "runa_memory.py"
+MIMIR_DB = Path.home() / ".hermes" / "memory" / "runa_memory.db"
 MUNINN_DB = Path.home() / ".hermes" / "memory" / "muninn_hebbian.db"
 HLIDSKJALF_DB = Path.home() / ".hermes" / "memory" / "hlidskjalf_cache.db"
 SKOFNUNG_DB = Path.home() / ".hermes" / "memory" / "skofnung_affinity.db"
@@ -45,7 +45,7 @@ PACKAGES = {
     "huginn": Path.home() / "huginn",
     "muninn": Path.home() / "muninn",
     "bifrost": Path.home() / "bifrost",
-    "eir": Path.home() / "eir",
+    "eir": Path.home() / "eir-archived-standalone",
     "verdandi": Path.home() / "verdandi",
     "svalinn": Path.home() / "svalinn",
     "vordr": Path.home() / "vordr",
